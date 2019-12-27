@@ -43,8 +43,8 @@ class Entry(models.Model):
     entry_realized_bool = models.BooleanField(name='realized', default=False)
 
     def __str__(self):
-        return "date: {date} type: {type} area: {area} with: {_with} origin_dest: {origin_dest} payment: {payment} " \
-               "value: {value} done: {done} ".format(
+        return "date: {date}\n type: {type}\n area: {area}\n with: {_with}\n origin_dest: {origin_dest}\n " \
+               "payment: {payment}\n value: {value}\n done: {done}\n ".format(
                                                     date=self.entry_date_date,
                                                     type=self.type,
                                                     area=self.area,
@@ -69,8 +69,8 @@ class Investment(models.Model):
                                            validators=[MinValueValidator(Decimal('0.01'))])
 
     def __str__(self):
-        return "date: {date} duedate: {duedate} paper: {paper} number: {number} paper_price: {paper_price} type: " \
-               "{type} where: {where} investment: {investment} ".format(
+        return "date: {date}\n duedate: {duedate}\n paper: {paper}\n number: {number}\n paper_price: {paper_price}\n" \
+               " type: {type}\n where: {where}\n investment: {investment}\n ".format(
                                                                         date=self.invest_date,
                                                                         duedate=self.due_date,
                                                                         paper=self.paper_name,

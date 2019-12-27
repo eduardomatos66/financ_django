@@ -1,3 +1,6 @@
 lib/
 lib64/
 .idea
+.pyc
+__pycache__/
+.py[cod]
