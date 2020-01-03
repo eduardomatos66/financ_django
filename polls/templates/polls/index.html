@@ -13,7 +13,7 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand brand-bold" href="#">Financial</a>
+            <a class="navbar-brand brand-bold uk-margin-left" href="#">Financial</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,12 +45,12 @@
     </div>
     <div class="uk-margin-top">
         <div class="row">
-            <div class="col-sm-1 month-lateral">
+            <div class="month-lateral">
                 JANUARY - 2020
             </div>
-            <div class="col-sm-4">
+            <div class="uk-width-1-3">
                 <div>
-                    <table id="month-summary-table" class="table table-striped table-hover table-responsive" >
+                    <table id="month-summary-table" class="table table-striped table-hover" >
                         <thead>
                             <tr>
                                 <th scope="col">Had</th>
@@ -70,7 +70,7 @@
                     </table>
                 </div>
                 <div>
-                    <table id="month-earn-table" class="table table-striped table-hover table-responsive month-earn-table" >
+                    <table id="month-earn-table" class="table table-striped table-hover month-earn-table" >
                         <thead>
                             <tr>
                                 <th scope="col">Date</th>
@@ -93,9 +93,9 @@
                 </div>
                 <div id="piechart"></div>
             </div>
-            <div class="col-sm-6">
+            <div class="uk-width-2-5 uk-margin-left">
                 {% if latest_entry_list %}
-                    <table id="month-spend-table" class="table table-striped table-hover table-responsive">
+                    <table id="month-spend-table" class="table table-striped table-hover">
 
                         <thead>
                             <tr>
@@ -124,9 +124,6 @@
                                 <td>{{ entry.realized }}</td>
                             </tr>
                             {% endfor %}
-                            {% if latest_entry_list.length > 2 %}
-                                Mopa
-                            {% endif %}
                         </tbody>
                     </table>
                 {% else %}
@@ -135,8 +132,6 @@
             </div>
         </div>
     </div>
-
-    <div id="piechart"></div>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">

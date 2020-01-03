@@ -22,6 +22,7 @@ th {
     text-orientation: upright;
     width: 90px !important;
     font-weight: bold;
+    margin-right: 25px;
 }
 
 .month-earn-table {
