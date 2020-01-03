@@ -1,0 +1,30 @@
+body {
+    background: white url("../images/soft-background.jpg") no-repeat;
+}
+
+th {
+    color: #fff !important;
+    background-color: #467bb1 !important;
+    border-color: #3571b1 !important;
+}
+
+.brand-bold {
+    font-weight: bold;
+}
+
+.table {
+    font-size: 11px;
+}
+
+.month-lateral {
+    top: 100px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: 90px !important;
+    font-weight: bold;
+}
+
+.month-earn-table {
+    margin-top: 25px;
+}
+
